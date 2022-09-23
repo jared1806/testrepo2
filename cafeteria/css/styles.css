@@ -1,0 +1,376 @@
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+.inicio {
+    background-image: url(../css/fondo2.3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    position: relative;
+    margin-bottom: rem;
+    max-width: 100%;
+    margin: 0 0;
+    
+}
+
+
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    color: white;
+    font-family: 'Shadows Into Light', cursive;
+    align-items: center;
+}
+
+span {
+    font-size: 2rem;
+    font-family: 'Cinzel', serif;
+}
+
+h2 {
+    font-size: 4rem;
+    text-align: center;
+    font-family: 'Tangerine', cursive;
+    color: white;
+}
+
+
+/* variables a ser usadas  */
+:root {
+    --primary:rgb(143, 24, 24);
+    --secundary:#2e4469;
+    --background:#35495e;
+    --black-text:rgb(61, 61, 61);
+    --white-text:#ffffff;
+    --blue-gradient:linear-gradient(90deg,rgb(143, 24, 24),#35495e);
+    --button-hover:#5b79a2;
+    --text-shadow:.2rem .2rem .2rem #0d0d0e;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+
+
+nav {
+    background-color: var(--primary);
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header{
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+}
+
+header h1 {
+    color: var(--white-text);
+    font-size: 2rem;
+    letter-spacing: .7rem;
+    font-family: 'Shadows Into Light', cursive;
+
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    border-right:  1px solid rgba(92, 89, 89, 0.41);
+}
+
+nav ul li:last-child {
+    border-right: none;
+}
+nav ul li a {
+    color: var(--white-text);
+    font-size: 1.2rem;
+    padding: .8rem 1rem;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    background-color: var(--button-hover);
+    transition: all .3s;
+    border-bottom: solid .2rem var(--secundary);
+}
+
+.drawer {
+    font-size: 1rem;
+    color: var(--white-text);
+    float: left;
+    cursor: pointer;
+    display: none;
+    margin-left: 1rem;
+    border: solid 1.5px var(--white-text);
+    padding: .2rem;
+    border-radius: .1rem;
+}
+
+#ckbox {
+    display: none;
+}
+
+/* media query */
+
+@media (max-width:1039px) {
+    nav{
+        justify-content: flex-start;
+    }
+    .drawer{
+        display: block;
+    }
+
+    nav h1{
+        margin-left: 1rem;
+        font-family: 'Shadows Into Light', cursive;
+    }
+
+    ul {
+        position: fixed;
+        width: 50%;
+        height: 100vh;
+        background-color: var(--background);
+        top: 10vh;
+        left:-100%;
+        text-align: left;
+        transition: all .5s;
+        display: flex;
+        flex-direction: column;
+        align-content: stretch;
+    }
+
+    nav ul li {
+        padding: 1rem 0;
+        display: flex;
+        flex-direction: column;
+        padding-left: 2rem;
+        border-bottom: solid .1rem rgba(201, 196, 196, 0.4);
+    }
+
+    #ckbox:checked  ~ .menu-box{
+        left:0;
+    }
+}
+
+
+.logo {
+    background-color: rgb(143, 24, 24);
+    text-align: center;
+}
+
+.logo__original {
+    font-size: 4rem;
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+    color: black;
+    text-decoration: none;}
+
+
+.logo {
+    background-color: rgb(143, 24, 24);
+    text-align: center;
+}
+
+.logo__original {
+    font-size: 4rem;
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+    color: black;
+    text-decoration: none;
+}.navegacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(143, 24, 24);
+}
+@media (min-width:768px) {
+    .navegacion {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+.navegacion a{
+    padding: 1rem 2rem;
+    color: black;
+    text-decoration: none;
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: 'Shadows Into Light', cursive;
+}
+.navegacion a:hover {
+    background-color: black;
+    color: white;
+}
+.navegacion a:last-of-type {
+    margin-bottom:0;
+}
+@media (min-width:768px) {
+    .navegacion a{
+        margin-bottom: 0;
+    }
+}
+
+.logo {
+    background-color: rgb(143, 24, 24);
+    text-align: center;
+}
+
+.logo__original {
+    font-size: 4rem;
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+    color: black;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 4rem;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+h2 {
+    font-size: 3.2rem;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+p {
+    font-size: 2rem;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.contenedor {
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.entrada-blog a {
+    display: inline-block;
+    background-color: rgb(143, 24, 24);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.footer {
+    text-align: center;
+    background-color: rgb(143, 24, 24);
+    font-size: 4rem;
+}
+
+.formulario {
+    background-color: rgb(143, 24, 24);
+    padding: 2rem;
+    border-radius: 10px;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
+.formulario legend {
+    text-align: center;
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 2rem;
+    display: block;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+@media (min-width:768px) {
+    .formulario {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+}
+.contenedor-campos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.campo {
+    margin-bottom: 1rem;
+    width: 100%;
+}
+@media (min-width:480px) {
+    .campo {
+        display: flex;
+        align-items: center;
+    }
+}
+@media (min-width: 768px) {
+    .campo{
+        flex: 0 0 calc(50% - .5rem)
+    }
+}
+.campo label {
+    color: b;
+    font-weight: 700;
+    margin-bottom: .5rem;
+    display: block;
+}
+@media (min-width:480px) {
+    .campo label {
+        flex: 0 0 90px;
+    }
+}
+.campo input[type="text"],
+.campo input[type="tel"],
+.campo input[type="mail"],
+.campo textarea {
+    width: 100%;
+    padding: .5rem;
+    border: none;
+    border-radius: .5rem;
+}
+@media (min-width: 768px) {
+    :is(.campo) :is( 
+        input[type="text"], 
+        input[type="text"],  
+        input[type="tel"],  
+        input[type="mail"] , 
+        textarea ) {
+        flex: 1;
+    }
+}
+
+.w-100{
+    flex: 0 0 100%;
+}
+.campo textarea {
+    height: 4rem;
+}
+
+.enviar {
+    display: flex;
+    justify-content: flex-end;
+}

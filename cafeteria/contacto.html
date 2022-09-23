@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafetería Café Café</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allison&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allison&family=Cinzel&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Allison&family=Shadows+Into+Light&family=Tangerine&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="ckbox">
+        <label for="ckbox" class="drawer">
+            <i class="fa fa-align-justify" aria-hidden="true"></i>
+        </label>
+        <h1>Don Quijote</h1>
+
+        <ul class="menu-box">
+            <li><a href="index.html" class="fa fa-home"> Inicio</a></li>
+            <li><a href="tienda.html" class="fa fa-shopping-basket">  Tienda Virtual</a></li>
+            <li><a href="blog.html" class="fa fa-user-o">  Blog</a></li>
+            <li><a href="historia.html" class="fa fa-archive">  Nuestra Historia</a></li>
+            <li><a href="sucursales.html" class="fa fa-coffee"> Sucursales</a> </li>
+            <li><a href="contacto.html" class="fa fa-address-book"> Contacto</a> </li>
+        </ul>
+    </nav> 
+    
+    
+    <div id="contacto" class="contacto">
+        <h2>Contacto</h2>
+        <form class="formulario" action="#" method="POST" data-netlify="true">
+            <legend>Complete los campos</legend>
+
+            <div class="contenedor-campos">
+                <div class="campo">
+                    <label>Nombre</label>
+
+                    <input type="text" name="nombre" placeholder="Nombre" required>
+                </div>
+                <div class="campo">
+                    <label>Teléfono</label>
+
+                    <input type="tel" name="telefono" placeholder="Teléfono">
+                </div>
+                <div class="campo w-100">
+                    <label>Correo</label>
+
+                    <input type="mail" name="correo" placeholder="Mail">
+                </div>
+                <div class="campo w-100">
+                    <label>Mensaje:</label>
+
+                    <input type="text" name="mensaje" placeholder="ingrsese una breve descripcion">
+                </div>
+            </div><!--.contenedor-campos-->
+            <div class="enviar">
+                <input class="boton" type="submit" name="Enviar">
+            </div>
+        </form>
+            
+            
+    </div>
+</div>
+</body>
+</html>
